@@ -39,10 +39,7 @@
 
 
 		
-            <li><a class="dropdown-item" href="../suplier/createsuplier.php">suplier</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="../lbs/createlbs.php">lbs</a></li>
-            <li><a class="dropdown-item" href="../product\addproduct.php">product</a></li>
+            <li><a class="dropdown-item" href="../post/createpost.php">Post</a></li>
           </ul>
         </li>
 
@@ -62,10 +59,10 @@
 
 				  <div class="form-group">
 				    <p><span class="text-danger">* required field</span></p>
-				    <label for="">Category Name</label>
-				    <input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter category name" name="topicname" required>
-
+				    <label for="">পোস্ট ক্যাটেগরি</label>
+				    <input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter category name" name="name" required>
 				  </div>
+          
 				  <button type="submit" class="btn btn-primary">Submit</button>
 				</form>
 			</div>
@@ -82,18 +79,18 @@
 						  
 						    <tr>
 						      <th scope="col">ID</th>
-						      <th scope="col">product category</th>
+						      <th scope="col">পোস্ট ক্যাটেগরি</th>
 						      <th scope="col">Action</th>
 						    </tr>
 						  </thead>
 						  <tbody>
 						  <?php 
-						  	$sql="select * from topic";
+						  	$sql="select * from category";
 								$result= mysqli_query($conn,$sql);
 						  	while ($row=mysqli_fetch_assoc($result)){?>
 						    <tr>
 						      <td> <?php echo $row['id']?></td>
-						      <td><?php echo $row['topicname']?></td>
+						      <td><?php echo $row['name']?></td>
 						      <td>
 						      	<a class="btn-btn-danger" href="deletecategory.php?id=<?php echo $row['id']?>"><button>delete</button></a>
 						      	

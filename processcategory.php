@@ -2,10 +2,10 @@
 <?php
 // define variables and set to empty values
 
-$topicname = "";
+$categoryname = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $topicname = test_input($_POST["topicname"]);
+  $name = test_input($_POST["name"]);
 }
 //if(isset($_POST['submit'])) {}
 function test_input($data) {
@@ -15,7 +15,7 @@ function test_input($data) {
   return $data;
 }
 
-$sql="INSERT INTO topic VALUES (NULL,'$topicname')";
+$sql="INSERT INTO category VALUES (NULL,'$name')";
 $result= mysqli_query($conn,$sql);
 header("Location:createcategory.php");
 
