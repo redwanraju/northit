@@ -34,13 +34,7 @@
             <li>
               <a class="dropdown-item" href="category\createcategory.php">category</a>
             </li>
-			      
-            <li><a class="dropdown-item" href="suplier/createsuplier.php">suplier</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="lbs/createlbs.php">lbs</a></li>
-            <li><hr class="dropdown-divider"></li>
-
-            <li><a class="dropdown-item" href="product\addproduct.php">product</a></li>
+			
           </ul>
         </li>
 
