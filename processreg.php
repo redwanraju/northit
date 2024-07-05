@@ -2,24 +2,20 @@
 <?php
 // define variables and set to empty values
 
-$fname="";
-$lname="";
-$email = "";
-$password = "";
-$password_again = "";
+$name = $email = $gender = $comment = $website = $password=$con_password="";
 
 if(isset($_POST['submit'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	$fname = test_input($_POST["fname"]);
-	$lname = test_input($_POST["lname"]);
+	$name = test_input($_POST["name"]);
 	$email = test_input($_POST["email"]);
-    $password = test_input($_POST["password"]);
-    $password = test_input($_POST["password"]);
+	$gender = test_input($_POST["gender"]);
+    $comment = test_input($_POST["comment"]);
+    $website = test_input($_POST["website"]);
+	$password = test_input($_POST["password"]);
+	$con_password = test_input($_POST["con_password"]);
 
 }
-if(empty(fname)){
-    $deliver_error_message='fill up this field';
-}
+
 }
 
 
@@ -35,8 +31,8 @@ function test_input($data) {
  return $data;
 }
 
-$sql="INSERT INTO `post` VALUES (NULL,'$title','$description','$category_id')";
+$sql="INSERT INTO `user` VALUES (NULL,'$name','$email','$gender','$comment','$website','$password','$con_password')";
 $result= mysqli_query($conn,$sql);
-header("Location:createpost.php");
+header("Location:register.php");
 
 ?>

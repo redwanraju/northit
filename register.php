@@ -97,9 +97,6 @@ function test_input($data) {
             </li>
 
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="../lbs/createlbs.php">lbs</a></li>
-
-            <li><a class="dropdown-item" href="../product\addproduct.php">product</a></li>
           </ul>
         </li>
 
@@ -115,7 +112,7 @@ function test_input($data) {
 			<div class="row">
 				<div class="col">
 				  <!-- Content here -->
-				  <form action=""method="POST">
+				  <form action="http://localhost/northit/auth/processreg.php"method="POST">
 
 					Name: <input type="text" name="name">
 					<span value="<?php echo $name;?>" class="error">* <?php echo $nameErr;?></span>
@@ -125,7 +122,7 @@ function test_input($data) {
 					<span value="<?php echo $email;?>" class="error">* <?php echo $emailErr;?></span>
 					<br><br>
 					Password:
-					<input type="text" name="email">
+					<input type="text" name="password">
 					<span value="<?php echo $password;?>" class="error">* <?php echo $passErr;?></span>
 					<br><br>
 					confirm Password:
