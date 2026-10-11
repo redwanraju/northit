@@ -64,3 +64,186 @@ A complete **POS (Point of Sale)**, **Inventory**, and **E-Commerce Management S
 ---
 
 ## 📁 Project Structure
+northit/
+│
+├── 📄 index.php # Dashboard / Homepage
+├── 📄 connect.php # Database connection
+├── 📄 login.php # Admin login
+├── 📄 register.php # User registration
+├── 📄 logout.php # Logout
+│
+├── 🛍️ PRODUCT MANAGEMENT
+│ ├── addproduct.php # Add new product
+│ ├── processproduct.php # Process product data
+│ ├── deleteproduct.php # Delete product
+│ └── createcategory.php # Add category
+│
+├── 🏷️ CATEGORY & SUPPLIER
+│ ├── createcategory.php # Add category
+│ ├── deletecategory.php # Delete category
+│ ├── createsupplier.php # Add supplier
+│ └── deletesupplier.php # Delete supplier
+│
+├── 💰 POS / SALES
+│ ├── createlbs.php # Create bill/label
+│ ├── deletelbs.php # Delete bill/label
+│ ├── online_checkout.php # Online checkout
+│ └── online_business_report.php # Business reports
+│
+├── 🛒 E-COMMERCE
+│ ├── online_customers.php # Customer management
+│ ├── order_management.php # Order management
+│ ├── registered_users.php # Registered users list
+│ ├── customer_dashboard_banner_click.php
+│ ├── customer_dashboard_banner_widget.php
+│ └── customer_dashboard_banners.php
+│
+├── 🔗 REFERRAL SYSTEM
+│ ├── referral_engine.php # Referral logic
+│ └── referral_management.php # Referral management
+│
+├── 🔐 SECURITY & ADMIN
+│ ├── site_admin_guard.php # Admin access control
+│ └── site_management.php # Site settings
+│
+├── 📝 BLOG / POSTS
+│ ├── createpost.php # Create post
+│ └── deletepost.php # Delete post
+│
+├── 🎨 ASSETS
+│ ├── mobile_admin_app.css # Mobile admin CSS
+│ ├── mobile_admin_app.js # Mobile admin JS
+│ └── mobile_checkout_app.css # Mobile checkout CSS
+│
+├── 🗄️ DATABASE
+│ └── demodatabase.sql # Full database schema
+│
+└── 📖 README.md # Project documentation
+
+text
+
+---
+
+## ⚙️ Installation Guide
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/redwanraju/northit.git
+2. Move to Your Server Directory
+Place the folder inside:
+
+htdocs (for XAMPP)
+
+www (for WAMP)
+
+var/www/html (for LAMP)
+
+3. Import the Database
+Open phpMyAdmin
+
+Create a new database named northit
+
+Click Import and select demodatabase.sql
+
+Click Go
+
+4. Configure Database Connection
+Open connect.php and update your credentials:
+
+php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "northit";
+5. Run the Project
+Open your browser and go to:
+
+text
+http://localhost/northit/
+6. Admin Login
+URL: http://localhost/northit/login.php
+
+Use the credentials from the database (check demodatabase.sql)
+
+📸 Screenshots
+Screenshots will be added soon.
+
+Planned Screenshots:
+🖥️ Admin Dashboard
+
+📦 Product Management Page
+
+💰 POS Billing Screen
+
+🛒 E-Commerce Storefront
+
+📊 Reports & Analytics
+
+🚀 Live Demo
+Live demo will be available soon.
+Planned hosting: InfinityFree (free PHP hosting)
+
+🎯 Use Cases
+This system is perfect for:
+
+🏪 Grocery & Super shops
+
+📦 Wholesale businesses
+
+🔧 Hardware stores
+
+🏢 Small and medium enterprises
+
+📚 School / Library inventory
+
+🏥 Pharmacy stock management
+
+🛍️ Online shops and e-commerce stores
+
+🔮 Future Improvements
+□ Barcode scanning support
+□ SMS notifications for orders
+□ Multi-user roles (Admin, Manager, Cashier)
+□ REST API for mobile apps
+□ Online backup feature
+□ Multi-language support (Bangla / English)
+□ Payment gateway integration (bKash, Nagad, Stripe)
+□ Advanced analytics dashboard
+□ Export reports to PDF / Excel
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+Fork the project
+
+Create your feature branch (git checkout -b feature/NewFeature)
+
+Commit your changes (git commit -m 'Add NewFeature')
+
+Push to the branch (git push origin feature/NewFeature)
+
+Open a Pull Request
+
+📄 License
+This project is open-source and available for learning and personal use.
+
+For commercial use, please contact the developer.
+
+👨‍💻 About the Developer
+Redwan Raju — PHP Web Developer
+
+I specialize in fixing PHP website bugs, building custom admin panels, and developing POS & E-commerce systems.
+
+🌐 Portfolio: redwanraju.github.io
+
+💼 LinkedIn: redwan-raju
+
+📧 Email: redwanraju75@gmail.com
+
+🐙 GitHub: @redwanraju
+
+🎨 Fiverr: redwanraju257
+
+⭐ If you find this project useful, please give it a star! ⭐
+
