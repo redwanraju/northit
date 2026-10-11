@@ -1,14 +1,11 @@
+# ==================================================
+# Security Basic
+# ==================================================
+
 Options -Indexes
 
-# Runtime PHP/CSS/JS stays available. Development/debug artifacts do not.
-<IfModule mod_authz_core.c>
-    <FilesMatch "(?i)\.(log|sql|zip|bak|old|ini|env)$">
-        Require all denied
-    </FilesMatch>
-</IfModule>
-<IfModule !mod_authz_core.c>
-    <FilesMatch "(?i)\.(log|sql|zip|bak|old|ini|env)$">
-        Order allow,deny
-        Deny from all
-    </FilesMatch>
-</IfModule>
+# Block sensitive files from browser access
+<FilesMatch "\.(sql|zip|bak|env|log|ini)$">
+    Require all denied
+</FilesMatch>
+
