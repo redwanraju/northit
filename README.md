@@ -1,4 +1,4 @@
-# POS & Inventory Management System (Northit)
+# POS , Inventory and E-Commers Management System 
 
 A complete POS & Inventory Management System built with PHP and MySQL. Manage products, suppliers, categories, stock, sales, and generate reports — all from a single admin panel.
 
