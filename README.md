@@ -1,6 +1,6 @@
-# Inventory Management System (Northit)
+# POS & Inventory Management System (Northit)
 
-A complete **Inventory Management System** built with PHP and MySQL. This system helps small and medium businesses manage their products, suppliers, categories, stock, sales, and generate reports — all from a single admin panel.
+A complete POS & Inventory Management System built with PHP and MySQL. Manage products, suppliers, categories, stock, sales, and generate reports — all from a single admin panel.
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
